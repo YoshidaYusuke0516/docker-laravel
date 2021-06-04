@@ -1,8 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-// コントローラー増えた際に毎回追加?
+// コントローラー増えた際に毎回追加
 use App\Http\Controllers\HelloController;
+use App\Http\Controllers\IndexController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,6 @@ Route::get('/', function () {
 
 // helloworld呼び出し
 Route::get('/hello', [HelloController::class, 'index']);
+
+// TOP画面呼び出し
+Route::get('/index', [IndexController::class, 'index']);
