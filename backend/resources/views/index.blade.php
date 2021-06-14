@@ -6,9 +6,13 @@
 </head>
 <body>
   <div>
-    <p>list2</p>
-    <p>list2</p>
-    <p>list3</p>
+  @foreach($value as $recode)
+            <tr>
+                <th>{{$recode->id}}</th>
+                <th>{{$recode->name}}</th>
+                <hr>
+            </tr>
+  @endforeach
   </div>
 </body>
 </html>
