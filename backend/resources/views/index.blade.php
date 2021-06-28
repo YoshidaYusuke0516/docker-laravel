@@ -9,10 +9,13 @@
   @foreach($value as $recode)
             <tr>
                 <th>{{$recode->id}}</th>
-                <th>{{$recode->name}}</th>
+                <div><a href="/index/detail/{{ $recode->id }}">{{ $recode->name }}</a>
                 <hr>
             </tr>
   @endforeach
+  </div>
+  <div>
+    <a href="{{ url('/hello') }}"> Laravel </a>
   </div>
 </body>
 </html>

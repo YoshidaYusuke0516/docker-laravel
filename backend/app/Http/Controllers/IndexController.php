@@ -16,4 +16,11 @@ class IndexController extends Controller
     $arr = ['Snome1', 'Snome2', 'Snome3'];
     return view('index', compact('value', 'arr'));
   }
+
+  public function detail($id)
+    {
+      $user = new User;
+      $value = $user->find($id);
+      return view('detail', compact('value'));
+    }
 }
