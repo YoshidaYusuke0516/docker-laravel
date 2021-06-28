@@ -25,3 +25,6 @@ Route::get('/hello', [HelloController::class, 'index']);
 
 // TOP画面呼び出し
 Route::get('/index', [IndexController::class, 'index']);
+
+// 詳細
+Route::get('/index/detail/{id}',  [IndexController::class, 'detail']);
