@@ -28,3 +28,7 @@ Route::get('/index', [IndexController::class, 'index']);
 
 // 詳細
 Route::get('/index/detail/{id}',  [IndexController::class, 'detail']);
+
+// 投稿
+Route::get('/index/add',  [IndexController::class, 'getAdd']);
+Route::post('/index/add',  [IndexController::class, 'getPost']);

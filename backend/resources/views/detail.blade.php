@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>List TOP Page</title>
+  <title>Detail Page</title>
 </head>
 <body>
   <div>
