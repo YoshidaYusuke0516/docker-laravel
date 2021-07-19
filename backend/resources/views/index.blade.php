@@ -17,5 +17,8 @@
   <div>
     <a href="{{ url('/hello') }}"> Laravel </a>
   </div>
+  <div>
+    <a href="/index/add">投稿</a>
+  </div>
 </body>
 </html>
