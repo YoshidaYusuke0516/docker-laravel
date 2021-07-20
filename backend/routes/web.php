@@ -32,3 +32,7 @@ Route::get('/index/detail/{id}',  [IndexController::class, 'detail']);
 // 投稿
 Route::get('/index/add',  [IndexController::class, 'getAdd']);
 Route::post('/index/add',  [IndexController::class, 'getPost']);
+
+// 編集
+Route::get('/index/edit/{id}',  [IndexController::class, 'getEdit']);
+Route::post('/index/edit/{id}',  [IndexController::class, 'postEdit']);
