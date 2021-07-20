@@ -14,7 +14,7 @@
       名前:{!! Form::text('name', $value->name) !!}
     </div>
     <div>
-      メール:{!! Form::text('email', $value->email) !!}
+      メール:{!! Form::text('email', $value->exif_thumbnail) !!}
     </div>
     <div>
         {!! Form::submit('編集') !!}
