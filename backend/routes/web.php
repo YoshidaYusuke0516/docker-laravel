@@ -36,3 +36,6 @@ Route::post('/index/add',  [IndexController::class, 'getPost']);
 // 編集
 Route::get('/index/edit/{id}',  [IndexController::class, 'getEdit']);
 Route::post('/index/edit/{id}',  [IndexController::class, 'postEdit']);
+
+// 削除
+Route::get('/index/delete/{id}',  [IndexController::class, 'getDelete']);

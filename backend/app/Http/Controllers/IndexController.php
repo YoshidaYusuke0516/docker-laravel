@@ -52,7 +52,7 @@ class IndexController extends Controller
     //リクエストデータ内のパスワードをハッシュ化して上書き
     $request->merge(['password' => Hash::make($request->password)]);
 
-    var_dump($request->password);
+    //var_dump($request->password);
 
     // リクエストデータをINSERT
     $user->fill($request->all())->save();
@@ -98,6 +98,20 @@ class IndexController extends Controller
       // TOP表示データ取得
       $value = $user->get();
 
+      return view('index', compact('value'));
+    }
+
+    // 削除
+    public function getDelete(Request $request)
+    {
+      $user = new User;
+
+      //削除
+      $value = $user->where('id',$request->id)->delete();
+      
+      // TOP表示データ取得
+      $value = $user->get();
+      
       return view('index', compact('value'));
     }
 }
