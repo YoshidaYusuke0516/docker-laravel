@@ -9,7 +9,11 @@
   @foreach($value as $recode)
             <tr>
                 <th>{{$recode->id}}</th>
-                <div><a href="/index/detail/{{ $recode->id }}">{{ $recode->name }}</a>
+                <th>{{ $recode->name }}</th>
+                <div>
+                  <a href="/index/detail/{{ $recode->id }}">詳細</a>
+                  <a href="/index/edit/{{ $recode->id }}">編集</a>
+                </div>
                 <hr>
             </tr>
   @endforeach
