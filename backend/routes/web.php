@@ -39,3 +39,8 @@ Route::post('/index/edit/{id}',  [IndexController::class, 'postEdit']);
 
 // 削除
 Route::get('/index/delete/{id}',  [IndexController::class, 'getDelete']);
+
+// ログイン認証
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
